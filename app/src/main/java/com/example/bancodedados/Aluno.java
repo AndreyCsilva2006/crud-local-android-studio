@@ -12,6 +12,9 @@ public class Aluno implements Serializable {
     private String cpf;
     private String telefone;
 
+    private String email;
+    private String senha;
+
     // Getter's and Setter's
     public Integer getId() {
         return id;
@@ -43,6 +46,22 @@ public class Aluno implements Serializable {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     // Sobrescrevendo o metodo toString() para uma vizualização melhor dos Alunos.
